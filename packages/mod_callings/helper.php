@@ -63,6 +63,7 @@ abstract class ModCallingsHelper
 
 		// Set ordering.
 		$ordering = $params->get('ordering', 'a.created');
+
 		$model->setState('list.ordering', $ordering);
 
 		if (trim($ordering) == 'rand()')
@@ -134,7 +135,7 @@ abstract class ModCallingsHelper
 		$model->setState('filter.access', $access);
 
 		// Set ordering.
-		$ordering = $params->get('ordering', 'a.created');
+		$ordering = $params->get('orderingresults', 'a.created');
 		$model->setState('list.ordering', $ordering);
 
 		if (trim($ordering) == 'rand()')

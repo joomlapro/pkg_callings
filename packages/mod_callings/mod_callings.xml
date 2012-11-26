@@ -29,7 +29,18 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-
+				<field name="count" type="text" default="5" label="MOD_CALLINGS_FIELD_ITEMS_LABEL" description="MOD_CALLINGS_FIELD_ITEMS_DESC" />
+				<field name="ordering" type="list" default="a.publish_up" label="MOD_CALLINGS_FIELD_ORDERING_LABEL" description="MOD_CALLINGS_FIELD_ORDERING_DESC">
+					<option value="a.date_opening">MOD_CALLINGS_FIELD_ORDERING_DATE_OPENING</option>
+					<option value="a.created">MOD_CALLINGS_FIELD_ORDERING_CREATED_DATE</option>
+					<option value="a.ordering">MOD_CALLINGS_FIELD_ORDERING_ORDERING</option>
+					<option value="rand()">MOD_CALLINGS_FIELD_ORDERING_RANDOM</option>
+				</field>
+				<field name="orderingresults" type="list" default="a.created" label="MOD_CALLINGS_FIELD_ORDERING_RESULTS_LABEL" description="MOD_CALLINGS_FIELD_ORDERING_RESULTS_DESC">
+					<option value="a.created">MOD_CALLINGS_FIELD_ORDERING_CREATED_DATE</option>
+					<option value="a.ordering">MOD_CALLINGS_FIELD_ORDERING_ORDERING</option>
+					<option value="rand()">MOD_CALLINGS_FIELD_ORDERING_RANDOM</option>
+				</field>
 			</fieldset>
 			<fieldset name="advanced">
 				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
