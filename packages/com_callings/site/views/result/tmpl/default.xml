@@ -8,7 +8,7 @@
 	<!-- Add fields to the request variables for the layout. -->
 	<fields name="request">
 		<fieldset name="request" addfieldpath="/administrator/components/com_callings/models/fields">
-			<field name="id" type="modal_callings" required="true" label="COM_CALLINGS_FIELD_SELECT_RESULT_LABEL" description="COM_CALLINGS_FIELD_SELECT_RESULT_DESC" />
+			<field name="id" type="modal_results" required="true" label="COM_CALLINGS_FIELD_SELECT_RESULT_LABEL" description="COM_CALLINGS_FIELD_SELECT_RESULT_DESC" />
 		</fieldset>
 	</fields>
 	<!-- Add fields to the parameters object for the layout. -->

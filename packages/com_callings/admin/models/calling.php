@@ -128,7 +128,7 @@ class CallingsModelCalling extends JModelAdmin
 			if (empty($table->ordering))
 			{
 				$db = JFactory::getDbo();
-				$db->setQuery('SELECT MAX(ordering) FROM #__callings');
+				$db->setQuery('SELECT MAX(ordering) FROM #__atomtech_callings');
 				$max = $db->loadResult();
 
 				$table->ordering = $max + 1;

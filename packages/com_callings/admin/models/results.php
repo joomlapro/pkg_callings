@@ -126,10 +126,10 @@ class CallingsModelResults extends JModelList
 			$this->getState(
 				'list.select',
 				'a.id, a.title, a.alias, a.checked_out, a.checked_out_time' .
-				', a.state, a.ordering'
+				', a.state, a.ordering, a.created'
 			)
 		);
-		$query->from($db->quoteName('#__callings_results') . ' AS a');
+		$query->from($db->quoteName('#__atomtech_callings_results') . ' AS a');
 
 		// Join over the users for the checked out user.
 		$query->select('uc.name AS editor');

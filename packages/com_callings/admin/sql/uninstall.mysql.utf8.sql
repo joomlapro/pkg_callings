@@ -1,2 +1,2 @@
-DROP TABLE IF EXISTS `#__callings`;
-DROP TABLE IF EXISTS `#__callings_results`;
+DROP TABLE IF EXISTS `#__atomtech_callings`;
+DROP TABLE IF EXISTS `#__atomtech_callings_results`;

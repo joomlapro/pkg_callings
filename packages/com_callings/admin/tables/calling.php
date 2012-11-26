@@ -27,7 +27,7 @@ class CallingsTableCalling extends JTable
 	 */
 	public function __construct(& $db)
 	{
-		parent::__construct('#__callings', 'id', $db);
+		parent::__construct('#__atomtech_callings', 'id', $db);
 	}
 
 	/**
@@ -48,7 +48,7 @@ class CallingsTableCalling extends JTable
 		}
 
 		// Check for existing title.
-		$query = 'SELECT id FROM #__callings WHERE title = ' . $this->_db->Quote($this->title);
+		$query = 'SELECT id FROM #__atomtech_callings WHERE title = ' . $this->_db->Quote($this->title);
 		$this->_db->setQuery($query);
 
 		$xid = (int) $this->_db->loadResult();
@@ -135,7 +135,7 @@ class CallingsTableCalling extends JTable
 
 		if ($table->load(array('alias' => $this->alias)) && ($table->id != $this->id || $this->id == 0))
 		{
-			$this->setError(JText::_('COM_CALLINGS_ERROR_UNIQUE_ALIAS'));
+			$this->setError(JText::_('COM_CALLINGS_CALLING_ERROR_UNIQUE_ALIAS'));
 			return false;
 		}
 

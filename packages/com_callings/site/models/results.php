@@ -156,7 +156,7 @@ class CallingsModelResults extends JModelList
 				. ', a.created, a.created_by_alias'
 			)
 		);
-		$query->from($db->quoteName('#__callings_results') . ' AS a');
+		$query->from($db->quoteName('#__atomtech_callings_results') . ' AS a');
 
 		// Join over the users for the author and modified_by names.
 		$query->select("CASE WHEN a.created_by_alias > ' ' THEN a.created_by_alias ELSE ua.name END AS author");
