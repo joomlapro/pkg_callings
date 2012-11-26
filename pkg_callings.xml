@@ -17,5 +17,7 @@
 	<files folder="packages">
 		<file type="component" id="callings">com_callings</file>
 		<file type="module" id="callings" client="site">mod_callings</file>
+		<file type="plugin" id="callings" group="search">plg_search_callings</file>
+		<file type="plugin" id="callings" group="search">plg_search_callings_results</file>
 	</files>
 </extension>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="search">
+	<name>plg_search_callings</name>
+	<author>Bruno Batista</author>
+	<creationDate>November 2012</creationDate>
+	<copyright>Copyright (C) 2012 AtomTech, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>bruno@atomtech.com.br</authorEmail>
+	<authorUrl>http://www.atomtech.com.br</authorUrl>
+	<version>3.0.0</version>
+	<description>PLG_SEARCH_CALLINGS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="callings">callings.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="pt-BR">language/pt-BR/pt-BR.plg_search_callings.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.plg_search_callings.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="search_limit" type="text" default="50" size="5" label="JFIELD_PLG_SEARCH_SEARCHLIMIT_LABEL" description="JFIELD_PLG_SEARCH_SEARCHLIMIT_DESC" />
+				<field name="search_content" type="radio" class="btn-group" default="0" label="JFIELD_PLG_SEARCH_ALL_LABEL" description="JFIELD_PLG_SEARCH_ALL_DESC">
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+				<field name="search_archived" type="radio" class="btn-group" default="0" label="JFIELD_PLG_SEARCH_ARCHIVED_LABEL" description="JFIELD_PLG_SEARCH_ARCHIVED_DESC">
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
