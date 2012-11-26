@@ -83,7 +83,7 @@ class CallingsModelResult extends JModelItem
 				$query = $db->getQuery(true);
 
 				$query->select($this->getState('item.select', 'a.*'));
-				$query->from($db->quoteName('#__atomtech_callings_results') . ' AS a');
+				$query->from($db->quoteName('#__callings_results') . ' AS a');
 
 				// Join on user table.
 				$query->select('u.name AS author');

@@ -131,7 +131,7 @@ class CallingsModelCallings extends JModelList
 				', a.state, a.ordering, a.created'
 			)
 		);
-		$query->from($db->quoteName('#__atomtech_callings') . ' AS a');
+		$query->from($db->quoteName('#__callings') . ' AS a');
 
 		// Join over the users for the checked out user.
 		$query->select('uc.name AS editor');

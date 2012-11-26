@@ -63,7 +63,7 @@ class JFormFieldModal_Callings extends JFormField
 		$db = JFactory::getDBO();
 		$db->setQuery(
 			'SELECT title' .
-			' FROM #__atomtech_callings' .
+			' FROM #__callings' .
 			' WHERE id = ' . (int) $this->value
 		);
 

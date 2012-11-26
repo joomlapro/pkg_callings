@@ -177,7 +177,7 @@ function callingsParseRoute($segments)
 					if ($advanced)
 					{
 						$db = JFactory::getDBO();
-						$query = 'SELECT id FROM #__atomtech_callings WHERE alias = ' . $db->Quote($segment);
+						$query = 'SELECT id FROM #__callings WHERE alias = ' . $db->Quote($segment);
 						$db->setQuery($query);
 						$nid = $db->loadResult();
 					}
@@ -195,7 +195,7 @@ function callingsParseRoute($segments)
 					if ($advanced)
 					{
 						$db = JFactory::getDBO();
-						$query = 'SELECT id FROM #__atomtech_callings_results WHERE alias = ' . $db->Quote($segment);
+						$query = 'SELECT id FROM #__callings_results WHERE alias = ' . $db->Quote($segment);
 						$db->setQuery($query);
 						$nid = $db->loadResult();
 					}
