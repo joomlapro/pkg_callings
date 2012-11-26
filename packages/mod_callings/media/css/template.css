@@ -1,0 +1,30 @@
+/* Callings */
+.callings .nav-tabs a {
+	padding-right: 7px;
+	padding-left: 7px;
+	font-size: 12px;
+}
+
+.callings blockquote:last-child {
+	margin-bottom: 0;
+}
+
+.callings .nav-tabs {
+	border-bottom: 1px solid #007B32;
+}
+
+.callings .nav-tabs > .active > a, .callings .nav-tabs > .active > a:hover {
+	border-top-color: #007B32;
+	border-right-color: #007B32;
+	border-left-color: #007B32;
+	border-bottom-color: #FFFFFF;
+	color: #555555;
+}
+
+.callings .nav-tabs > li > a:hover {
+	border-color: #EEEEEE #EEEEEE #007B32;
+}
+
+.callings blockquote {
+	border-color: #99cc99;
+}
