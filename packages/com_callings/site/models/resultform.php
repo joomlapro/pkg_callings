@@ -36,7 +36,7 @@ class CallingsModelResultForm extends CallingsModelResult
 		$app = JFactory::getApplication();
 
 		// Load state from the request.
-		$pk = $app->input->getInt('r_id');
+		$pk = $app->input->getInt('c_id');
 		$this->setState('result.id', $pk);
 
 		$return = $app->input->get('return', null, 'base64');

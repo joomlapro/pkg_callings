@@ -31,7 +31,7 @@ defined('_JEXEC') or die;
 			<?php foreach ($this->items as $item): ?>
 				<?php
 				$opening = $item->date_closing >= JFactory::getDate()->format("Y-m-d");
-				$class = $opening ? 'success' : 'warning';
+				$class = $opening ? 'success' : 'closing';
 				?>
 				<tr class="<?php echo $class; ?>">
 					<td class="center">

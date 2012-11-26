@@ -53,7 +53,7 @@ class CallingsControllerResult extends JControllerForm
 	 *
 	 * @since   3.0
 	 */
-	public function cancel($key = 'r_id')
+	public function cancel($key = 'c_id')
 	{
 		parent::cancel($key);
 
@@ -71,7 +71,7 @@ class CallingsControllerResult extends JControllerForm
 	 *
 	 * @since   3.0
 	 */
-	public function edit($key = null, $urlVar = 'r_id')
+	public function edit($key = null, $urlVar = 'c_id')
 	{
 		$result = parent::edit($key, $urlVar);
 
@@ -178,7 +178,7 @@ class CallingsControllerResult extends JControllerForm
 	 *
 	 * @since   3.0
 	 */
-	public function save($key = null, $urlVar = 'r_id')
+	public function save($key = null, $urlVar = 'c_id')
 	{
 		$result = parent::save($key, $urlVar);
 

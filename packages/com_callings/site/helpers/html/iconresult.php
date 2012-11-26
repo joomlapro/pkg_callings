@@ -33,7 +33,7 @@ class JHtmlIconResult
 		// Initialiase variables.
 		$uri = JURI::getInstance();
 
-		$url = 'index.php?option=com_callings&task=result.add&return=' . base64_encode($uri) . '&r_id=0';
+		$url = 'index.php?option=com_callings&task=result.add&return=' . base64_encode($uri) . '&c_id=0';
 
 		if ($params->get('show_icons', 1))
 		{
@@ -137,7 +137,7 @@ class JHtmlIconResult
 			return '<span class="hasTip" title="' . htmlspecialchars($tooltip, ENT_COMPAT, 'UTF-8') . '">' . $button . '</span>';
 		}
 
-		$url = 'index.php?option=com_callings&task=result.edit&r_id=' . $result->id . '&return=' . base64_encode($uri);
+		$url = 'index.php?option=com_callings&task=result.edit&c_id=' . $result->id . '&return=' . base64_encode($uri);
 
 		if ($result->state == 0)
 		{
