@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS `#__callings`;
-CREATE TABLE `fndsp_atomtech_callings` (
+CREATE TABLE `#__callings` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL DEFAULT '',
   `alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',
@@ -21,7 +21,7 @@ CREATE TABLE `fndsp_atomtech_callings` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `#__callings_results`;
-CREATE TABLE `fndsp_atomtech_callings_results` (
+CREATE TABLE `#__callings` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL DEFAULT '',
   `alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '',

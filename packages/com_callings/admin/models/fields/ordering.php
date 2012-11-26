@@ -51,7 +51,7 @@ class JFormFieldOrdering extends JFormField
 
 		// Build the query for the ordering list.
 		$query = 'SELECT ordering AS value, title AS text' .
-				' FROM #__atomtech_callings' .
+				' FROM #__callings' .
 				' ORDER BY ordering';
 
 		// Create a read-only list (no name) with a hidden input to store the value.

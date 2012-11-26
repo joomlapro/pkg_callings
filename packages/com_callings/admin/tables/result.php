@@ -27,7 +27,7 @@ class CallingsTableResult extends JTable
 	 */
 	public function __construct(& $db)
 	{
-		parent::__construct('#__atomtech_callings_results', 'id', $db);
+		parent::__construct('#__callings_results', 'id', $db);
 	}
 
 	/**
@@ -48,7 +48,7 @@ class CallingsTableResult extends JTable
 		}
 
 		// Check for existing title.
-		$query = 'SELECT id FROM #__atomtech_callings_results WHERE title = ' . $this->_db->Quote($this->title);
+		$query = 'SELECT id FROM #__callings_results WHERE title = ' . $this->_db->Quote($this->title);
 		$this->_db->setQuery($query);
 
 		$xid = (int) $this->_db->loadResult();
