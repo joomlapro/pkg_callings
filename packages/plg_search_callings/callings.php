@@ -174,7 +174,7 @@ class PlgSearchCallings extends JPlugin
 			$query->select('a.title AS title, a.description AS text, a.created AS created, '
 				. $case_when . ', '
 				. $db->Quote($section) . ' AS section, \'2\' AS browsernav');
-			$query->from($db->quoteName('#__atomtech_callings') . ' AS a');
+			$query->from($db->quoteName('#__callings') . ' AS a');
 			$query->where('(' . $where . ')' . ' AND a.state in (' . implode(', ', $state) . ')');
 			$query->order($order);
 

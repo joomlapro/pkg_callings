@@ -5,8 +5,8 @@
 		<field name="asset_id" type="hidden" filter="unset" />
 		<field id="title" name="title" type="text" class="inputbox span6" size="30" required="true" label="JGLOBAL_TITLE" description="COM_CALLINGS_FIELD_TITLE_DESC" />
 		<field id="alias" name="alias" type="text" class="inputbox" size="45" label="JFIELD_ALIAS_LABEL" description="JFIELD_ALIAS_DESC" />
-		<field name="date_opening" type="calendar" class="inputbox" format="%Y-%m-%d" size="10" label="COM_CLIPPINGS_FIELD_DATE_OPENING_LABEL" description="COM_CLIPPINGS_FIELD_DATE_OPENING_DESC" />
-		<field name="date_closing" type="calendar" class="inputbox" format="%Y-%m-%d" size="10" label="COM_CLIPPINGS_FIELD_DATE_CLOSING_LABEL" description="COM_CLIPPINGS_FIELD_DATE_CLOSING_DESC" />
+		<field name="date_opening" type="calendar" class="inputbox" format="%Y-%m-%d" size="10" label="COM_CALLINGS_FIELD_DATE_OPENING_LABEL" description="COM_CALLINGS_FIELD_DATE_OPENING_DESC" />
+		<field name="date_closing" type="calendar" class="inputbox" format="%Y-%m-%d" size="10" label="COM_CALLINGS_FIELD_DATE_CLOSING_LABEL" description="COM_CALLINGS_FIELD_DATE_CLOSING_DESC" />
 		<field id="ordering" name="ordering" type="ordering" class="inputbox" label="JFIELD_ORDERING_LABEL" description="JFIELD_ORDERING_DESC" />
 		<field id="description" name="description" type="editor" buttons="true" hide="pagebreak,readmore" class="inputbox" filter="JComponentHelper::filterText" asset_id="com_callings" label="JGLOBAL_DESCRIPTION" description="COM_CALLINGS_FIELD_DESCRIPTION_DESC" />
 		<field id="state" name="state" type="list" class="inputbox" size="1" default="1" label="JSTATUS" description="JFIELD_PUBLISHED_DESC">

@@ -55,7 +55,7 @@ class CallingsController extends JControllerLegacy
 		);
 
 		// Check for edit form.
-		if (($vName == 'clippingform' && !$this->checkEditId('com_callings.edit.calling', $id))
+		if (($vName == 'callingform' && !$this->checkEditId('com_callings.edit.calling', $id))
 			|| ($vName == 'resultform' && !$this->checkEditId('com_callings.edit.result', $id)))
 		{
 			// Somehow the person just went to the form - we don't allow that.
