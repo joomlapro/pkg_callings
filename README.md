@@ -1,7 +1,7 @@
 Callings Package for Joomla! 3.0
 ================================
 
-Simple componente and module to register and show callings for Joomla! 3.0
+Simple component and module to register and show callings for Joomla! 3.0
 
 ## Installation
 
